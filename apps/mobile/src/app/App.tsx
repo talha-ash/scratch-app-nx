@@ -5,7 +5,7 @@ import { View, Text } from 'react-native';
 const App = () => {
   return (
     <View>
-      <Text>{shared()}</Text>
+      <Text id='heading'>{shared()}</Text>
     </View>
   );
 };

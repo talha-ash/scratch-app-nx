@@ -5,5 +5,5 @@
   "projectType": "application",
   "targets": {},
   "tags": [],
-  "implicitDependencies": ["mobile"]
+  "implicitDependencies": ["mobile", "shared"]
 }
