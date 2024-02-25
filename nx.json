@@ -75,12 +75,37 @@
       "options": {
         "targetName": "test"
       }
+    },
+    {
+      "plugin": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "previewTargetName": "preview",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "serveStaticTargetName": "serve-static"
+      }
     }
   ],
   "nxCloudAccessToken": "MjNjMTA0NjEtMTA0Yi00ZWQxLWI1ZGMtYTBkYWZiYWUzMGZifHJlYWQtd3JpdGU=",
   "generators": {
     "@nx/next": {
       "application": {
+        "style": "css",
+        "linter": "eslint"
+      }
+    },
+    "@nx/react": {
+      "application": {
+        "babel": true,
+        "style": "css",
+        "linter": "eslint",
+        "bundler": "vite"
+      },
+      "component": {
+        "style": "css"
+      },
+      "library": {
         "style": "css",
         "linter": "eslint"
       }
