@@ -16,7 +16,12 @@
     "baseUrl": ".",
     "paths": {
       "@nx/shared": ["libs/src/index.ts"]
-    }
+    },
+    "plugins": [
+      {
+        "name": "@0no-co/graphqlsp"
+      }
+    ]
   },
   "exclude": ["node_modules", "tmp"]
 }

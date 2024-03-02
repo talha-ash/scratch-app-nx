@@ -55,15 +55,6 @@
       }
     },
     {
-      "plugin": "@nx/next/plugin",
-      "options": {
-        "buildTargetName": "build",
-        "devTargetName": "dev",
-        "startTargetName": "start",
-        "serveStaticTargetName": "serve-static"
-      }
-    },
-    {
       "plugin": "@nx/cypress/plugin",
       "options": {
         "targetName": "e2e",
@@ -89,12 +80,6 @@
   ],
   "nxCloudAccessToken": "MjNjMTA0NjEtMTA0Yi00ZWQxLWI1ZGMtYTBkYWZiYWUzMGZifHJlYWQtd3JpdGU=",
   "generators": {
-    "@nx/next": {
-      "application": {
-        "style": "css",
-        "linter": "eslint"
-      }
-    },
     "@nx/react": {
       "application": {
         "babel": true,

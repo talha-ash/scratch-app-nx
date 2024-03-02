@@ -1,1 +1,2 @@
-export * from './lib/shared';
+export * from './lib/queryHooks';
+export * from './lib/types';
