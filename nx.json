@@ -22,6 +22,7 @@
       "plugin": "@nx/react-native/plugin",
       "options": {
         "startTargetName": "start",
+        "testTargetName": "test",
         "podInstallTargetName": "pod-install",
         "bundleTargetName": "bundle",
         "runIosTargetName": "run-ios",

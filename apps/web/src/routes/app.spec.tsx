@@ -1,15 +1,14 @@
-import { render } from '@testing-library/react';
-
+import { renderWebComponent } from '@nx/shared';
 import App from './app';
 
 describe('App', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<App />);
+    const { baseElement } = renderWebComponent(<App />);
     expect(baseElement).toBeTruthy();
   });
 
-  it('should have a greeting as the title', () => {
-    const { getByText } = render(<App />);
-    expect(getByText(/Welcome web/gi)).toBeTruthy();
+  it('should have a Heading 1 text', () => {
+    const { getByText } = renderWebComponent(<App />);
+    expect(getByText(/Heading 1/gi)).toBeTruthy();
   });
 });
