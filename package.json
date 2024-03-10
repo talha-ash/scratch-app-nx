@@ -2,7 +2,14 @@
   "name": "@scratch-app/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "web:serve": "npx nx run web:serve --verbose",
+    "web:test": "npx nx test web --verbose",
+    "web:e2e": "npx nx e2e web-e2e",
+    "web:allTest": "npm run web:test && npm run web:e2e",
+    "mobile:android": "npx nx run mobile:run-android --verbose",
+    "mobile:test": "npx nx test mobile --verbose"
+  },
   "private": true,
   "dependencies": {
     "@tanstack/react-query": "^5.24.1",
